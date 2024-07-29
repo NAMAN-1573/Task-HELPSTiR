@@ -36,8 +36,8 @@ const App = () => {
   const filteredTasks = tasks.filter(task => task.title.toLowerCase().includes(searchTerm.toLowerCase()));
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl text-primary mb-4">Todo List</h1>
+    <div className="container mx-auto p-4 max-w-xl h-screen">
+      <h1 className="text-2xl text-center  mb-10 text-primary mb-4">Naman's Todo</h1>
       <AddTask onAdd={handleAdd} />
       <Search searchTerm={searchTerm} onSearch={handleSearch} />
       <TaskList tasks={filteredTasks} onUpdate={handleUpdate} onDelete={handleDelete} onComplete={handleComplete} />

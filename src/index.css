@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* src/index.css */
+body {
+  background-color: #001d3d;
+  color: white;
+}
